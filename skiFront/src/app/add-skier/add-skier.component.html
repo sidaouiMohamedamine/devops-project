@@ -1,0 +1,67 @@
+<div class="container p-1" style="margin-top:9%;">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-5 border border-1 p-5 shadow">
+      <h1 class="text-center">Add Skier</h1>
+
+      <div class="mt-5">
+        <form #f="ngForm">
+
+          <div class="mb-3">
+            <label class="form-label">Firstname</label>
+            <div class="input-group">
+            <input type="text"
+              class="form-control"
+              id="firstName"
+              name="firstName"
+              ngModel #fn="ngModel" [(ngModel)]="skier.firstName"
+              >
+          </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Lastname</label>
+            <div class="input-group">
+            <input type="text" class="form-control"
+              id="lastName"
+              name="lastName"
+              ngModel #ln="ngModel" [(ngModel)]="skier.lastName"
+              >
+          </div>
+          </div>
+
+
+          <div class="mb-3">
+            <label class="form-label">dateOfBirth</label>
+            <div class="input-group">
+            <input type="date" class="form-control"
+              id="dateOfBirth"
+              name="dateOfBirth"
+              ngModel #db="ngModel" [(ngModel)]="skier.dateOfBirth"
+              >
+          </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">City</label>
+            <div class="input-group">
+            <input type="City" class="form-control"
+              id="City"
+              name="city"
+              ngModel #c="ngModel" [(ngModel)]="skier.city"
+
+              >
+          </div>
+          </div>
+
+
+          <div class="mb-3 ">
+            <div class="d-flex flex-column align-items-center align-items-md-start">
+                <button type="button" class="btn btn-primary rounded-0 px-3 fw-bold"  (click)="send()">Send</button>
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </div>

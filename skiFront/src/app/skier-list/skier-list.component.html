@@ -1,0 +1,36 @@
+<div class="row g-0">
+  <div class="col-3">
+  </div>
+  <div class="col-8 mt-5 me-3">
+    <table class="table align-item-center table caption-top table-striped table-hover ">
+       <caption class="fw-bold">Skiers lists</caption>
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">FirstName</th>
+          <th scope="col">LastName</th>
+          <th scope="col">DateOfBirth</th>
+          <th scope="col">City</th>
+          <th scope="col">Action</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor =" let t of skier ">
+          <td></td>
+          <td>{{t.firstName}}</td>
+          <td>{{t.lastName}}</td>
+          <td>{{t.dateOfBirth}}</td>
+          <td>{{t.city}}</td>
+          <td>
+
+            <button type="button" class="btn btn-primary rounded-0 px-3 fw-bold"  (click)="add()">Add</button>
+
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
